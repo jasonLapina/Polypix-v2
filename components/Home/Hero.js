@@ -24,7 +24,7 @@ function Hero() {
         transform='translate(-50%,-50%)'
         gap='24px'
       >
-        <Heading filter='drop-shadow(0 0 8px white)' fontSize='80px'>
+        <Heading filter='drop-shadow(0 0 4px white)' fontSize='80px'>
           Polypix Studios
         </Heading>
         <Button>BUTTON TO PAGE</Button>
