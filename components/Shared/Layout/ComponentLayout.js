@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-function Layout(props) {
+function ComponentComponentLayout(props) {
   return (
     <Box maxW='1440px' mx='auto' {...props}>
       {props.children}
@@ -7,4 +7,4 @@ function Layout(props) {
   );
 }
 
-export default Layout;
+export default ComponentComponentLayout;

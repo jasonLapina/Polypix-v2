@@ -1,5 +1,5 @@
 import { Box, Heading, VStack, Text, Button } from "@chakra-ui/react";
-import Layout from "../Shared/Layout/Layout";
+import ComponentLayout from "../Shared/Layout/ComponentLayout";
 function HomeSegment({ variant }) {
   const align = {
     text: variant === 1 ? "right" : "left",
@@ -7,7 +7,7 @@ function HomeSegment({ variant }) {
   };
   return (
     <Box pb='160px' pt='80px' bgColor={variant === 1 ? "red.100" : "blue.100"}>
-      <Layout>
+      <ComponentLayout>
         <VStack
           textAlign={align.text}
           px='16px'
@@ -32,7 +32,7 @@ function HomeSegment({ variant }) {
             BUTTON TO CERTAIN SEGMENT
           </Button>
         </VStack>
-      </Layout>
+      </ComponentLayout>
     </Box>
   );
 }
