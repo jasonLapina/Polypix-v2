@@ -1,5 +1,6 @@
 import { Box, Button, Heading, VStack } from "@chakra-ui/react";
 import SignupBtn from "../Shared/UI/SignupBtn";
+import Link from "next/link";
 function Hero() {
   return (
     <Box w='100%' h='1080px' pos='relative'>
@@ -27,7 +28,9 @@ function Hero() {
         <Heading filter='drop-shadow(0 0 4px white)' fontSize='80px'>
           Polypix Studios
         </Heading>
-        <Button>BUTTON TO PAGE</Button>
+        <Button as={Link} href='/plans'>
+          BUTTON TO PAGE
+        </Button>
       </VStack>
       <Box p='24px' display='flex' justifyContent='end'>
         <SignupBtn />
