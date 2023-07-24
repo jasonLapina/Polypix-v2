@@ -1,6 +1,5 @@
-import { Box, Button, HStack, Heading, VStack } from "@chakra-ui/react";
-import SignupBtn from "../Shared/UI/SignupBtn";
-import Link from "next/link";
+import { Box, Button, Heading, VStack } from "@chakra-ui/react";
+
 function Hero() {
   return (
     <Box w='100%' h='100vh' pos='relative'>
