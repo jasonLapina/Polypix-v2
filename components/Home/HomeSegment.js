@@ -1,6 +1,6 @@
 import { Box, Heading, VStack, Text, Button } from "@chakra-ui/react";
 import ComponentLayout from "../Shared/Layout/ComponentLayout";
-function HomeSegment({ variant }) {
+function HomeSegment({ variant, header, text }) {
   const align = {
     text: variant === 1 ? "right" : "left",
     flex: variant === 1 ? "end" : "start",
@@ -15,12 +15,15 @@ function HomeSegment({ variant }) {
           align='normal'
         >
           <Heading letterSpacing='tight' fontSize='32px'>
-            MAIN TITLED DESCRIPTION
+            {header}
           </Heading>
-          <Text lineHeight={1.4}>
-            Lorem ipsum dolor sit amet <br />
-            Lorem ipsum dolor sit amet dolor sit amet <br />
-            Lorem ipsum dolor sit amet Lorem ipsum <br />
+          <Text
+            textAlign={align.text}
+            alignSelf={align.flex}
+            maxW='480px'
+            lineHeight={1.4}
+          >
+            {text}
           </Text>
           <Button
             mt='8px'

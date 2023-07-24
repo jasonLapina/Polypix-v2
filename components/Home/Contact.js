@@ -1,5 +1,5 @@
 import { Box, Heading, Input, VStack, Text, Textarea } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ComponentLayout from "../Shared/Layout/ComponentLayout";
 
 const inputs = [
