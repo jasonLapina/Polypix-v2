@@ -3,7 +3,7 @@ import SignupBtn from "../Shared/UI/SignupBtn";
 import Link from "next/link";
 function Hero() {
   return (
-    <Box w='100%' h='1080px' pos='relative'>
+    <Box w='100%' h='100vh' pos='relative'>
       <Box
         as='video'
         autoPlay
@@ -20,7 +20,7 @@ function Hero() {
       </Box>
       <VStack
         pos='absolute'
-        top='40%'
+        top='45%'
         left='50%'
         transform='translate(-50%,-50%)'
         gap='24px'

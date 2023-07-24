@@ -14,9 +14,17 @@ function PlanItem({ plan }) {
         <Text>{bottomText}</Text>
         <Text fontSize='32px'>{price}</Text>
       </VStack>
-      <Button mt='16px' px='24px'>
-        {title === "Studio" ? "Contact us" : "Text"}
-      </Button>
+      <Box display='flex' justifyContent='center' justifyItems='center'>
+        <Button
+          textTransform='uppercase'
+          w='120px'
+          borderRadius='40px'
+          mt='16px'
+          px='24px'
+        >
+          {title === "Studio" ? "Contact us" : "Text"}
+        </Button>
+      </Box>
     </Box>
   );
 }
