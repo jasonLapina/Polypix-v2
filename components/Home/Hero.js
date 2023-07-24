@@ -28,18 +28,11 @@ function Hero() {
         <Heading filter='drop-shadow(0 0 4px white)' fontSize='80px'>
           Polypix Studios
         </Heading>
-        <HStack>
-          <Button as={Link} href='/plans'>
-            plans
-          </Button>
-          <Button as={Link} href='/products'>
-            prods
-          </Button>
-        </HStack>
+        <Button borderRadius='40px'>Button to page</Button>
       </VStack>
-      <Box p='24px' display='flex' justifyContent='end'>
+      {/* <Box p='24px' display='flex' justifyContent='end'>
         <SignupBtn />
-      </Box>
+      </Box> */}
     </Box>
   );
 }
