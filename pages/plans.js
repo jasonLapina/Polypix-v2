@@ -1,4 +1,5 @@
 import PlanList from "@/components/Plans/PlanList";
+import PlanTestimonials from "@/components/Plans/PlanTestimonials";
 import PlansHero from "@/components/Plans/PlansHero";
 
 function plans() {
@@ -6,6 +7,7 @@ function plans() {
     <>
       <PlansHero />
       <PlanList />
+      <PlanTestimonials />
     </>
   );
 }
