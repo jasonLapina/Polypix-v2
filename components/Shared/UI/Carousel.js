@@ -1,11 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import Slider from "react-slick";
+
 function Carousel(props) {
   const { children, propSettings } = props;
 
   const settings = {
-    dots: true,
     infinite: true,
+    focusOnSelect: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
