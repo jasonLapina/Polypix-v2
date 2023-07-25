@@ -1,3 +1,4 @@
+import { Box } from "@chakra-ui/react";
 import Contact from "./Contact";
 import Hero from "./Hero";
 import HomeSegment from "./HomeSegment";
@@ -20,7 +21,7 @@ const segmentContents = [
 
 function HomePage() {
   return (
-    <>
+    <Box mb='160px'>
       <Hero />
       <HomeSegment
         variant={1}
@@ -39,7 +40,7 @@ function HomePage() {
       />
       <Testimonials />
       <Contact />
-    </>
+    </Box>
   );
 }
 
