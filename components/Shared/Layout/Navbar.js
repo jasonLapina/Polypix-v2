@@ -1,4 +1,4 @@
-import { Button, HStack } from "@chakra-ui/react";
+import { Box, Button, HStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -38,22 +38,27 @@ function Navbar() {
 
   return (
     <HStack
+      bgColor='blackAlpha.400'
       zIndex={99}
       pos='fixed'
-      right='20px'
-      top='16px'
       transition='all .4s'
+      w='100%'
+      gap='16px'
+      py='16px'
     >
+      <Box boxSize='24px' />
       {navItems.map((item) => {
         return (
           <Button
             _hover={{
               opacity: 1,
             }}
+            variant='link'
             opacity={isPastHero ? 0.4 : 1}
             borderRadius='40px'
             as={Link}
             href={item.link}
+            color='white'
           >
             {item.text}
           </Button>

@@ -14,7 +14,9 @@ function PackList({ packs }) {
   return (
     <Box>
       <ComponentLayout>
-        <Heading>Asset Pack List</Heading>
+        <Heading textAlign='center' mb='24px'>
+          Asset Packs
+        </Heading>
         <Carousel propSettings={carouselSettings}>
           {packs.map((item) => (
             <PackItem pack={item} key={item.id} />

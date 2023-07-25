@@ -9,10 +9,10 @@ export default function Products({ packs }) {
   return (
     <Box>
       <Box h='320px' w='100%' bgColor='red.100' />
-      <VStack align='normal'>
-        <VideoList />
+      <VStack my='48px' align='normal'>
+        {/* <VideoList /> */}
         <PackList packs={packs.data} />
-        <AssetList />
+        {/* <AssetList /> */}
       </VStack>
     </Box>
   );
