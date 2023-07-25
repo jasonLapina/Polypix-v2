@@ -2,7 +2,7 @@ import { Box, Button, Text, VStack } from "@chakra-ui/react";
 function PlanItem({ plan }) {
   const { title, description, points, bottomText, price } = plan;
   return (
-    <Box borderRadius='20px' bgColor='gray.200' p='24px'>
+    <Box borderRadius='20px' bgColor='gray.700' p='24px'>
       <VStack align='normal' gap='24px'>
         <Text fontSize='32px'>{title}</Text>
         <Text>{description}</Text>
@@ -12,7 +12,12 @@ function PlanItem({ plan }) {
           ))}
         </Box>
         <Text>{bottomText}</Text>
-        <Text fontSize='32px'>{price}</Text>
+        {price.length !== 0 && <Text fontSize='32px'>{price}</Text>}
+        {price.length === 0 && (
+          <Text pointerEvents='none' fontSize='32px' opacity={0}>
+            lorem
+          </Text>
+        )}
       </VStack>
       <Box display='flex' justifyContent='center' justifyItems='center'>
         <Button

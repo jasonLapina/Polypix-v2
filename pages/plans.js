@@ -6,7 +6,7 @@ import { Box, Button, HStack, Heading } from "@chakra-ui/react";
 
 function plans() {
   return (
-    <>
+    <Box>
       <PlansHero />
       <PlanList />
       <PlanTestimonials />
@@ -21,7 +21,7 @@ function plans() {
           </HStack>
         </Box>
       </ComponentLayout>
-    </>
+    </Box>
   );
 }
 

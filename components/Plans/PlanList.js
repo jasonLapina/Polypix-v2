@@ -37,25 +37,27 @@ function PlanList() {
       points: ["lorem ipsum dolor", "lorem ipsum dolor", "lorem ipsum dolor"],
       bottomText:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, quas. Ipsum nemo voluptatem rerum modi dolor dolores inventore asperiores, voluptates ratione esse",
-      price: "$1B",
+      price: "",
     },
   ];
   return (
-    <ComponentLayout py='80px'>
-      <Heading fontSize='48px' textTransform='uppercase' textAlign='center'>
-        Choose your plan
-      </Heading>
-      <HStack
-        justifyContent='space-around'
-        justifyItems='center'
-        mt='120px'
-        gap='24px'
-      >
-        {dummyPlans.map((item) => (
-          <PlanItem plan={item} />
-        ))}
-      </HStack>
-    </ComponentLayout>
+    <Box color='white' bgColor='black'>
+      <ComponentLayout py='80px'>
+        <Heading fontSize='48px' textTransform='uppercase' textAlign='center'>
+          Choose your plan
+        </Heading>
+        <HStack
+          justifyContent='space-around'
+          justifyItems='center'
+          mt='120px'
+          gap='24px'
+        >
+          {dummyPlans.map((item) => (
+            <PlanItem plan={item} />
+          ))}
+        </HStack>
+      </ComponentLayout>
+    </Box>
   );
 }
 
