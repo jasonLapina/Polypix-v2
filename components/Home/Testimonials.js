@@ -22,8 +22,8 @@ function Testimonials() {
           {dummyIcons.map((item, i) => (
             <Box
               key={i}
-              w='80px'
-              h='80px'
+              w='160px'
+              h='160px'
               mx='54px'
               bgColor='green.100'
               borderRadius='full'
