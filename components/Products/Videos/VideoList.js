@@ -1,7 +1,6 @@
-import { Box, Heading } from "@chakra-ui/react";
-import ComponentLayout from "../../Shared/Layout/ComponentLayout";
 import Carousel from "../../Shared/UI/Carousel";
 import VideoItem from "./VideoItem";
+import ProductsLayout from "../ProductsLayout";
 function VideoList() {
   const dummyVids = Array.from({
     length: 8,
@@ -15,18 +14,13 @@ function VideoList() {
   };
 
   return (
-    <Box>
-      <ComponentLayout>
-        <Heading textAlign='center' fontWeight='thin' mb='24px'>
-          Videos
-        </Heading>
-        <Carousel propSettings={carouselSettings}>
-          {dummyVids.map((_, i) => (
-            <VideoItem key={i} />
-          ))}
-        </Carousel>
-      </ComponentLayout>
-    </Box>
+    <ProductsLayout heading='Videos'>
+      <Carousel propSettings={carouselSettings}>
+        {dummyVids.map((_, i) => (
+          <VideoItem key={i} />
+        ))}
+      </Carousel>
+    </ProductsLayout>
   );
 }
 

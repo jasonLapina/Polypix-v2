@@ -1,8 +1,20 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 function AssetItem({ asset }) {
-  const { image } = asset.attributes;
+  const { image, name } = asset.attributes;
   return (
-    <Box>
+    <Box pos='relative'>
+      <Text
+        px='8px'
+        py='4px'
+        pos='absolute'
+        bottom='8px'
+        left='16px'
+        fontSize='22px'
+        color='white'
+        filter='drop-shadow(0 0 4px black)'
+      >
+        {name}
+      </Text>
       <Image
         fallbackSrc='/logo.png'
         loading='lazy'
