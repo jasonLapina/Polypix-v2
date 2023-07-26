@@ -16,7 +16,7 @@ export default function Products({ packs, assets }) {
         </Heading>
       </Center>
       <VStack my='48px' gap='80px' align='normal'>
-        {/* <VideoList /> */}
+        <VideoList />
         <PackList packs={packs.data} />
         <AssetList assets={assets.data} />
       </VStack>
