@@ -1,12 +1,8 @@
-import { Box, Button, HStack } from "@chakra-ui/react";
+import { Box, Button, HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  {
-    text: "Home",
-    link: "/",
-  },
   {
     text: "Plans",
     link: "/plans",
@@ -23,6 +19,7 @@ const navItems = [
 
 function Navbar() {
   const [isPastHero, setIsPastHero] = useState(false);
+
   const handleScroll = () => {
     if (window.scrollY >= window.innerHeight) {
       setIsPastHero(true);
@@ -38,32 +35,39 @@ function Navbar() {
 
   return (
     <HStack
-      bgColor='blackAlpha.400'
+      bgColor={isPastHero ? "blackAlpha.400" : "none"}
       zIndex={99}
       pos='fixed'
       transition='all .4s'
       w='100%'
-      gap='16px'
-      py='16px'
+      px='16px'
+      py='8px'
+      justifyContent='space-between'
+      align='center'
     >
-      <Box boxSize='24px' />
-      {navItems.map((item) => {
-        return (
-          <Button
-            _hover={{
-              opacity: 1,
-            }}
-            variant='link'
-            opacity={isPastHero ? 0.4 : 1}
-            borderRadius='40px'
-            as={Link}
-            href={item.link}
-            color='white'
-          >
-            {item.text}
-          </Button>
-        );
-      })}
+      <Box as={Link} href='/' cursor='pointer' boxSize='64px'>
+        <Image src='/logo.png' w='100%' />
+      </Box>
+      <HStack pr='16px' gap='32px' justifyContent='end'>
+        {navItems.map((item) => {
+          return (
+            <Button
+              _hover={{
+                opacity: 1,
+              }}
+              variant='link'
+              opacity={isPastHero ? 0.4 : 1}
+              borderRadius='40px'
+              as={Link}
+              href={item.link}
+              color='white'
+              fontSize='20px'
+            >
+              {item.text}
+            </Button>
+          );
+        })}
+      </HStack>
     </HStack>
   );
 }

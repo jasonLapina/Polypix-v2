@@ -1,5 +1,4 @@
 import { Box, Button, Image } from "@chakra-ui/react";
-import logo from "../../../assets/logo.png";
 
 function PackItem({ pack }) {
   const { image, link } = pack.attributes;
@@ -9,7 +8,8 @@ function PackItem({ pack }) {
       <Image
         w='100%'
         src={`https://api.polypixstudios.com${image.data.attributes.url}`}
-        fallbackSrc={logo}
+        fallbackSrc='/logo.png'
+        loading='lazy'
       />
       <Button
         pos='absolute'

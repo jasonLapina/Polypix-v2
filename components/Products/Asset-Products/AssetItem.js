@@ -4,6 +4,7 @@ function AssetItem({ asset }) {
   return (
     <Box>
       <Image
+        fallbackSrc='/logo.png'
         loading='lazy'
         src={`https://api.polypixstudios.com${image.data[0].attributes.url}`}
       />

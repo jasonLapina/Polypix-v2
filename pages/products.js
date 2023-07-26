@@ -9,7 +9,7 @@ import { Box, Center, Heading, VStack } from "@chakra-ui/react";
 export default function Products({ packs, assets }) {
   return (
     <Box>
-      <Center h='320px' w='100%' bgColor='red.100'>
+      <Center h='100vh' w='100%' bgColor='red.100'>
         <Heading>
           HEADER PHOTO <br />
           CLICKABLE REPLACEABLE LINK
