@@ -1,12 +1,13 @@
 import { Box, Heading, VStack, Text, Button } from "@chakra-ui/react";
 import ComponentLayout from "../Shared/Layout/ComponentLayout";
-function HomeSegment({ variant, header, text }) {
+function HomeSegment(props) {
+  const { variant, header, text } = props;
   const align = {
     text: variant === 1 ? "right" : "left",
     flex: variant === 1 ? "end" : "start",
   };
   return (
-    <Box pb='160px' pt='80px' bgColor={variant === 1 ? "red.100" : "blue.100"}>
+    <Box pb='160px' pt='80px' {...props}>
       <ComponentLayout>
         <VStack
           textAlign={align.text}

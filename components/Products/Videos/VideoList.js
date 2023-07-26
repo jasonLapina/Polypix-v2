@@ -1,6 +1,6 @@
 import { Box, Heading } from "@chakra-ui/react";
-import ComponentLayout from "../Shared/Layout/ComponentLayout";
-import Carousel from "../Shared/UI/Carousel";
+import ComponentLayout from "../../Shared/Layout/ComponentLayout";
+import Carousel from "../../Shared/UI/Carousel";
 function VideoList() {
   return (
     <Box>

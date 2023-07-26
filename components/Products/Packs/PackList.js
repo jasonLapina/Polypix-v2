@@ -7,15 +7,15 @@ function PackList({ packs }) {
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true,
-    centerPadding: "110px",
     className: "center",
+    centerPadding: "290px",
   };
 
   return (
     <Box>
       <ComponentLayout>
-        <Heading textAlign='center' mb='24px'>
-          Asset Packs
+        <Heading textAlign='center' fontWeight='thin' mb='24px'>
+          Packs
         </Heading>
         <Carousel propSettings={carouselSettings}>
           {packs.map((item) => (

@@ -27,16 +27,19 @@ function HomePage() {
         variant={1}
         header={segmentContents[0].header}
         text={segmentContents[0].text}
+        bgColor='red.100'
       />
       <HomeSegment
         variant={2}
         header={segmentContents[1].header}
         text={segmentContents[1].text}
+        bgColor='blue.100'
       />
       <HomeSegment
         variant={1}
         header={segmentContents[2].header}
         text={segmentContents[2].text}
+        bgColor='yellow.100'
       />
       <Testimonials />
       <Contact />
