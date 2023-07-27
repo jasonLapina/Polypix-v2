@@ -5,7 +5,7 @@ import ProductsLayout from "../ProductsLayout";
 function PackList({ packs }) {
   const carouselSettings = {
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     centerMode: true,
     className: "center",
     centerPadding: "290px",

@@ -19,8 +19,8 @@ function AssetModal({ onClose, isOpen, asset }) {
   return (
     <Modal
       size='4xl'
-      blockScrollOnMount={true}
       isOpen={isOpen}
+      blockScrollOnMount={false}
       onClose={onClose}
     >
       <ModalOverlay />

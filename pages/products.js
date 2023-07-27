@@ -1,3 +1,4 @@
+import ActionBar from "@/components/Products/Action-Bar/ActionBar";
 import AssetList from "@/components/Products/Asset-Products/AssetList";
 import PackList from "@/components/Products/Packs/PackList";
 import VideoList from "@/components/Products/Videos/VideoList";
@@ -15,6 +16,7 @@ export default function Products({ packs, assets }) {
           CLICKABLE REPLACEABLE LINK
         </Heading>
       </Center>
+      <ActionBar />
       <VStack my='48px' gap='80px' align='normal'>
         <VideoList />
         <PackList packs={packs.data} />

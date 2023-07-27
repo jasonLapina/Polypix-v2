@@ -6,7 +6,7 @@ import { Box, Button, HStack, Heading } from "@chakra-ui/react";
 
 function plans() {
   return (
-    <Box mb='240px'>
+    <Box mb='50dvh'>
       <PlansHero />
       <PlanList />
       <PlanTestimonials />
