@@ -3,9 +3,9 @@ import ComponentLayout from "../Shared/Layout/ComponentLayout";
 function ProductsLayout(props) {
   const { heading, children } = props;
   return (
-    <Box {...props}>
+    <Box py='8px' {...props}>
       <ComponentLayout>
-        <Heading mb='24px' textAlign='center' fontWeight='thin'>
+        <Heading mb='8px' textTransform='uppercase' fontWeight='extrabold'>
           {heading}
         </Heading>
         {children}
