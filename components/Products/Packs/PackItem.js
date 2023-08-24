@@ -25,6 +25,8 @@ function PackItem({ pack }) {
         _hover={{
           opacity: 1,
         }}
+        bgColor='action'
+        color='white'
       >
         View
       </Button>

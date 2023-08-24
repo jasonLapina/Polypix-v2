@@ -84,7 +84,7 @@ function Footer() {
   ];
 
   return (
-    <Box bgColor='black' color='white' pt='40px' pb='80px'>
+    <Box bgColor='primary' color='white' pt='40px' pb='80px'>
       <ComponentLayout>
         <Text mb='24px' fontSize='32px'>
           CONTACT US

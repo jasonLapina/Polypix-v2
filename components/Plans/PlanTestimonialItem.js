@@ -2,9 +2,9 @@ import { Avatar, Box, HStack, Text } from "@chakra-ui/react";
 function PlanTestimonialItem({ testi }) {
   return (
     <Box w='600px' mx='40px'>
-      <Box w='100%' h='240px' bgColor='blue.100' />
+      <Box w='100%' h='240px' bgColor='action' />
       <HStack my='32px' gap='24px'>
-        <Avatar />
+        <Avatar bgColor='green' />
         <Text>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsam
           vitae commodi nemo velit cumque similique blanditiis officia animi

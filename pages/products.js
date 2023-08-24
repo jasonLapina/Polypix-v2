@@ -11,15 +11,15 @@ import { Box, Center, Heading, VStack } from "@chakra-ui/react";
 export default function Products({ packs, assets }) {
   return (
     <>
-      <Box>
-        <Center h='50vh' w='100%' bgColor='red.100'>
+      <Box bgColor='dark' color='white'>
+        <Center h='50vh' w='100%' bgColor='light'>
           <Heading>
             HEADER PHOTO <br />
             CLICKABLE REPLACEABLE LINK
           </Heading>
         </Center>
         <ActionBar />
-        <VStack my='48px' gap='80px' align='normal'>
+        <VStack mt='48px' pb='80px' gap='80px' align='normal'>
           <VideoList />
           <PackList packs={packs.data} />
           <AssetList assets={assets.data} />

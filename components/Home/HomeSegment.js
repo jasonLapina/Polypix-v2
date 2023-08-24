@@ -7,7 +7,7 @@ function HomeSegment(props) {
     flex: variant === 1 ? "end" : "start",
   };
   return (
-    <Box pb='160px' pt='80px' {...props}>
+    <Box pb='160px' pt='80px' color='white' {...props}>
       <ComponentLayout>
         <VStack
           textAlign={align.text}

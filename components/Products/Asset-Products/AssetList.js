@@ -16,7 +16,6 @@ function AssetList({ assets }) {
           ))}
         </Grid>
       </ProductsLayout>
-      <SegmentActions />
     </Box>
   );
 }

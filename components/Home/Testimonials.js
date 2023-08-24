@@ -6,7 +6,7 @@ function Testimonials() {
   const dummyIcons = Array.from({ length: 8 });
   const dummyTestimonials = Array.from({ length: 3 });
   return (
-    <Box py='40px'>
+    <Box color='white' py='40px' bgColor='dark' pb='120px'>
       <ComponentLayout>
         <Heading textTransform='uppercase'>
           The right license for <br /> your project

@@ -12,10 +12,11 @@ function services() {
   ];
   return (
     <>
-      <Box pb='80px'>
-        <Center mb='40px' h='100vh' w='100%' bgColor='red.100'>
+      <Box bgColor='dark' color='white' pb='80px'>
+        <Center mb='40px' h='100vh' w='100%' bgColor='light'>
           <Heading fontSize='56px'>SERVICES</Heading>
         </Center>
+
         <ComponentLayout>
           <Text maxW='600px' mb='32px'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex

@@ -5,7 +5,7 @@ import { Box, Heading } from "@chakra-ui/react";
 function auth() {
   return (
     <>
-      <Box py='120px' bgColor='blackAlpha.600'>
+      <Box bgColor='dark' py='120px'>
         <ComponentLayout>
           <SigninForm />
         </ComponentLayout>

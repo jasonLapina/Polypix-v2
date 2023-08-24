@@ -11,9 +11,10 @@ function ActionBar() {
       py='8px'
       transition='all .4s'
       zIndex={99}
-      bgColor='black'
+      bgColor='light'
       pos='sticky'
       top='79px'
+      color='white'
     >
       <HStack
         maxW='1800px'
@@ -23,7 +24,11 @@ function ActionBar() {
       >
         <HStack pr='16px' gap='16px'>
           {dummyActions.map((item, i) => {
-            return <Button key={i}>BUTTON</Button>;
+            return (
+              <Button bgColor='gray' key={i}>
+                BUTTON
+              </Button>
+            );
           })}
         </HStack>
         <Searchbar />

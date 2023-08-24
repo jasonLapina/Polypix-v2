@@ -57,17 +57,16 @@ function Navbar() {
 
   return (
     <HStack
-      bgColor={isPastHero ? "black" : "none"}
+      // bgColor={isPastHero ? "black" : "none"}
       zIndex={99}
       pos='fixed'
       transition='all .4s'
       w='100%'
       px='16px'
-      py='8px'
       justifyContent='space-between'
       align='center'
     >
-      <Box as={Link} href='/' cursor='pointer' boxSize='64px'>
+      <Box py='8px' as={Link} href='/' cursor='pointer' boxSize='64px'>
         <Image src='/logo.png' w='100%' />
       </Box>
       <HStack pr='16px' gap='32px' justifyContent='end'>
@@ -79,12 +78,11 @@ function Navbar() {
                 opacity: 1,
               }}
               variant='link'
-              opacity={isPastHero ? 0.4 : 1}
+              // opacity={isPastHero ? 0.4 : 1}
               borderRadius='40px'
               as={Link}
               href={item.link}
               color='white'
-              fontSize='20px'
               textTransform='uppercase'
             >
               {item.text}
