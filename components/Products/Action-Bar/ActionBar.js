@@ -11,12 +11,9 @@ function ActionBar() {
       py='8px'
       transition='all .4s'
       zIndex={99}
-      bgColor='blackAlpha.400'
+      bgColor='black'
       pos='sticky'
       top='79px'
-      _hover={{
-        bgColor: "blackAlpha.600",
-      }}
     >
       <HStack
         maxW='1800px'

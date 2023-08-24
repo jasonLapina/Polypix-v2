@@ -42,7 +42,7 @@ function Navbar() {
       setIsPastHero(true);
     } else if (
       route.pathname === "/products" &&
-      window.scrollY >= window.innerHeight * 0.5
+      window.scrollY >= window.innerHeight / 2 - 84
     ) {
       setIsPastHero(true);
     } else {
@@ -53,11 +53,11 @@ function Navbar() {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [route.pathname]);
 
   return (
     <HStack
-      bgColor={isPastHero ? "blackAlpha.400" : "none"}
+      bgColor={isPastHero ? "black" : "none"}
       zIndex={99}
       pos='fixed'
       transition='all .4s'
@@ -66,9 +66,6 @@ function Navbar() {
       py='8px'
       justifyContent='space-between'
       align='center'
-      _hover={{
-        bgColor: "blackAlpha.600",
-      }}
     >
       <Box as={Link} href='/' cursor='pointer' boxSize='64px'>
         <Image src='/logo.png' w='100%' />

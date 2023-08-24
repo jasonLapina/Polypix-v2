@@ -15,7 +15,7 @@ function Hero() {
         pos='absolute'
         zIndex={-1}
       >
-        <source src='https://api.polypixstudios.com/uploads/banner_video_0d8b8948c4.mp4' />
+        <source src='https://api.polypixstudios.com/uploads/Web_Vid_1080_P_559a594ade.mp4' />
       </Box>
       <VStack
         pos='absolute'
