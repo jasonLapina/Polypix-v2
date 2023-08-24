@@ -13,7 +13,7 @@ function ActionBar() {
       zIndex={99}
       bgColor='blackAlpha.400'
       pos='sticky'
-      top='80px'
+      top='79px'
       _hover={{
         bgColor: "blackAlpha.600",
       }}

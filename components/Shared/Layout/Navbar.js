@@ -1,5 +1,6 @@
 import { Box, Button, HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const navItems = [
@@ -31,9 +32,18 @@ const navItems = [
 
 function Navbar() {
   const [isPastHero, setIsPastHero] = useState(false);
+  const route = useRouter();
 
   const handleScroll = () => {
-    if (window.scrollY >= window.innerHeight) {
+    if (
+      window.scrollY >= window.innerHeight &&
+      route.pathname !== "/products"
+    ) {
+      setIsPastHero(true);
+    } else if (
+      route.pathname === "/products" &&
+      window.scrollY >= window.innerHeight * 0.5
+    ) {
       setIsPastHero(true);
     } else {
       setIsPastHero(false);
