@@ -6,16 +6,7 @@ function SegmentActions() {
   });
   return (
     <Box bgColor='red'>
-      <ComponentLayout>
-        <HStack py='8px' my='24px' justify='space-around'>
-          {dummyControls.map((_, i) => (
-            <HStack p='8px' bgColor='yellow.300' key={i}>
-              <Box w='100px' h='40px' bgColor='black' />
-              <Button>Button</Button>
-            </HStack>
-          ))}
-        </HStack>
-      </ComponentLayout>
+      <ComponentLayout></ComponentLayout>
     </Box>
   );
 }

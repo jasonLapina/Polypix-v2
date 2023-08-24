@@ -1,5 +1,4 @@
 import { Box } from "@chakra-ui/react";
-import Contact from "./Contact";
 import Hero from "./Hero";
 import HomeSegment from "./HomeSegment";
 import Testimonials from "./Testimonials";
@@ -42,7 +41,6 @@ function HomePage() {
         bgColor='yellow.100'
       />
       <Testimonials />
-      <Contact />
     </Box>
   );
 }

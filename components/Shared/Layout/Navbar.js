@@ -4,16 +4,28 @@ import { useEffect, useState } from "react";
 
 const navItems = [
   {
-    text: "Plans",
-    link: "/plans",
+    text: "Services",
+    link: "/services",
+  },
+  {
+    text: "Edu Collab",
+    link: "/edu",
+  },
+  {
+    text: "About Us",
+    link: "/about",
   },
   {
     text: "Products",
     link: "/products",
   },
   {
-    text: "Signup",
-    link: "/",
+    text: "Sign in",
+    link: "/auth",
+  },
+  {
+    text: "Plans",
+    link: "/plans",
   },
 ];
 
@@ -44,6 +56,9 @@ function Navbar() {
       py='8px'
       justifyContent='space-between'
       align='center'
+      _hover={{
+        bgColor: "blackAlpha.600",
+      }}
     >
       <Box as={Link} href='/' cursor='pointer' boxSize='64px'>
         <Image src='/logo.png' w='100%' />
@@ -52,6 +67,7 @@ function Navbar() {
         {navItems.map((item) => {
           return (
             <Button
+              key={item.text}
               _hover={{
                 opacity: 1,
               }}
@@ -62,6 +78,7 @@ function Navbar() {
               href={item.link}
               color='white'
               fontSize='20px'
+              textTransform='uppercase'
             >
               {item.text}
             </Button>

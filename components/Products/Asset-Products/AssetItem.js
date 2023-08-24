@@ -1,9 +1,15 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import AssetModal from "./AssetModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 function AssetItem({ asset }) {
   const [showModal, setShowModal] = useState(false);
+  const [src, setSrc] = useState("/logo.png");
   const { image, name } = asset.attributes;
+
+  useEffect(() => {
+    if (!image) return;
+    setSrc(`https://api.polypixstudios.com${image.data[0].attributes.url}`);
+  }, [image]);
 
   return (
     <>
@@ -26,9 +32,10 @@ function AssetItem({ asset }) {
           {name}
         </Text>
         <Image
-          fallbackSrc='/logo.png'
           loading='lazy'
-          src={`https://api.polypixstudios.com${image.data[0].attributes.url}`}
+          // src={`https://api.polypixstudios.com${image.data[0].attributes.url}`}
+          src={src}
+          onLoad={() => console.log("i have loaded")}
         />
       </Box>
     </>
