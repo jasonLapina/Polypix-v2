@@ -107,7 +107,7 @@ function Footer() {
         </Grid>
         <Grid alignItems='start' mt='80px' gridTemplateColumns='6fr 4fr'>
           {/* EXTERNAL LINKS */}
-          <HStack alignItems='start' justifySelf='end' gap='48px'>
+          <HStack alignItems='start' justifySelf='center' gap='48px'>
             {externals.map((item) => {
               return (
                 <Box key={item.header}>
@@ -128,7 +128,7 @@ function Footer() {
               );
             })}
           </HStack>
-          <HStack justifySelf='end' alignItems='center'>
+          <HStack justifySelf='center' alignItems='center'>
             <Image w='120px' src='/logo.png' />
             <Box fontSize='18px'>
               <Text>Philippines, Cebu City</Text>

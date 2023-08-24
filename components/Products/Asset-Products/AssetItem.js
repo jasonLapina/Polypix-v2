@@ -35,7 +35,6 @@ function AssetItem({ asset }) {
           loading='lazy'
           // src={`https://api.polypixstudios.com${image.data[0].attributes.url}`}
           src={src}
-          onLoad={() => console.log("i have loaded")}
         />
       </Box>
     </>
