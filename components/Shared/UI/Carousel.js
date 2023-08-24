@@ -5,11 +5,14 @@ function Carousel(props) {
   const { children, propSettings } = props;
 
   const settings = {
-    infinite: true,
     focusOnSelect: true,
-    speed: 500,
-    slidesToShow: 1,
+    infinite: true,
+    slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     ...propSettings,
   };
 

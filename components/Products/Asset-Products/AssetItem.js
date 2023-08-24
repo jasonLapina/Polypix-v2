@@ -18,7 +18,13 @@ function AssetItem({ asset }) {
         onClose={() => setShowModal(false)}
         asset={asset}
       />
-      <Box onClick={() => setShowModal(true)} cursor='pointer' pos='relative'>
+      <Box
+        borderRadius='8px'
+        onClick={() => setShowModal(true)}
+        cursor='pointer'
+        pos='relative'
+        overflow='hidden'
+      >
         <Text
           px='8px'
           py='4px'
@@ -35,6 +41,7 @@ function AssetItem({ asset }) {
           loading='lazy'
           // src={`https://api.polypixstudios.com${image.data[0].attributes.url}`}
           src={src}
+          aspectRatio='1/1'
         />
       </Box>
     </>

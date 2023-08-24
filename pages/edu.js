@@ -1,6 +1,7 @@
 import ComponentLayout from "@/components/Shared/Layout/ComponentLayout";
 import Footer from "@/components/Shared/Layout/Footer";
 import { Box, Center, Circle, HStack, Heading, Text } from "@chakra-ui/react";
+import Marquee from "react-fast-marquee";
 function services() {
   const clients = Array.from({ length: 5 });
   return (
@@ -20,11 +21,24 @@ function services() {
             <Center fontSize='20px' mb='40px'>
               Our Client Institutions:
             </Center>
-            <HStack justify='center' gap='120px'>
-              {clients.map((client) => (
-                <Circle size='80px' bgColor='red' />
+            <Box
+              my='48px'
+              overflowY='hidden'
+              speed={150}
+              as={Marquee}
+              autoFill={true}
+            >
+              {clients.map((item, i) => (
+                <Box
+                  key={i}
+                  w='160px'
+                  h='160px'
+                  mx='54px'
+                  bgColor='red'
+                  borderRadius='full'
+                />
               ))}
-            </HStack>
+            </Box>
           </Box>
         </ComponentLayout>
       </Box>

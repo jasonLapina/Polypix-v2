@@ -9,6 +9,7 @@ import {
   Icon,
   Circle,
   Image,
+  Button,
 } from "@chakra-ui/react";
 import { TfiLinkedin, TfiFacebook, TfiInstagram } from "react-icons/tfi";
 import ComponentLayout from "./ComponentLayout";
@@ -121,7 +122,9 @@ function Footer() {
                   </Text>
                   <VStack alignItems='start' gap='8px'>
                     {item.links.map((link) => (
-                      <Text key={link.text}>{link.text}</Text>
+                      <Button variant='link' key={link.text}>
+                        {link.text}
+                      </Button>
                     ))}
                   </VStack>
                 </Box>

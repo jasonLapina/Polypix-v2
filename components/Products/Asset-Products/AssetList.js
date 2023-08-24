@@ -8,9 +8,8 @@ function AssetList({ assets }) {
     <Box bgColor='green.100'>
       <ProductsLayout heading='Assets'>
         <Grid
-          gridTemplateColumns='repeat(auto-fit, minmax(320px,1fr))'
-          columnGap='8px'
-          rowGap='24px'
+          gridTemplateColumns='repeat(auto-fit, minmax(240px,1fr))'
+          gap='2px'
         >
           {assets.map((item) => (
             <AssetItem key={item.id} asset={item} />
