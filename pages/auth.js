@@ -1,6 +1,7 @@
 import SigninForm from "@/components/Auth/SigninForm";
 import ComponentLayout from "@/components/Shared/Layout/ComponentLayout";
 import Footer from "@/components/Shared/Layout/Footer";
+import AltNav from "@/components/Shared/UI/AltNav";
 import { Box, Heading } from "@chakra-ui/react";
 function auth() {
   return (
@@ -10,6 +11,7 @@ function auth() {
           <SigninForm />
         </ComponentLayout>
       </Box>
+      <AltNav />
       <Footer />
     </>
   );
