@@ -2,6 +2,7 @@ import { Box, Button, HStack, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import ProfileMenu from "./ProfileMenu";
 
 const navItems = [
   {
@@ -89,6 +90,7 @@ function Navbar() {
             </Button>
           );
         })}
+        <ProfileMenu />
       </HStack>
     </HStack>
   );
