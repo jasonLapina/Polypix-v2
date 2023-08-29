@@ -1,8 +1,8 @@
 import { Box, Button, Heading, VStack } from "@chakra-ui/react";
 function PlansHero() {
   return (
-    <Box bgColor='dark' color='white'>
-      <Box pos='relative' w='100%' h='100vh' bgColor='light'>
+    <Box bgColor='secondary' color='white'>
+      <Box pos='relative' w='100%' h='100vh' bgColor='secondaryDark'>
         <VStack h='100%' justifyContent='center'>
           <Heading textAlign='center' textTransform='uppercase' fontSize='48px'>
             Get your creative <br />

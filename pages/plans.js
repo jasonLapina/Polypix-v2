@@ -8,7 +8,7 @@ import { Box, Button, HStack, Heading } from "@chakra-ui/react";
 function plans() {
   return (
     <>
-      <Box bgColor='dark' color='white' pb='40dvh'>
+      <Box bgColor='secondary' color='white' pb='40dvh'>
         <PlansHero />
         <PlanList />
         <PlanTestimonials />
@@ -26,6 +26,7 @@ function plans() {
                 borderRadius='20px'
                 variant='outline'
                 borderColor='action'
+                color='action'
               >
                 Get premium access
               </Button>

@@ -11,7 +11,7 @@ function ActionBar() {
       py='8px'
       transition='all .4s'
       zIndex={99}
-      bgColor='light'
+      bgColor='secondaryLight'
       pos='sticky'
       top='79px'
       color='white'
@@ -25,7 +25,7 @@ function ActionBar() {
         <HStack pr='16px' gap='16px'>
           {dummyActions.map((item, i) => {
             return (
-              <Button bgColor='gray' key={i}>
+              <Button bgColor='secondary' color='white' key={i}>
                 BUTTON
               </Button>
             );

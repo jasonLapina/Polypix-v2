@@ -18,7 +18,7 @@ function PackList({ packs }) {
   };
 
   return (
-    <Box bgColor='burlywood'>
+    <Box>
       <ProductsLayout heading='Packs'>
         <Carousel propSettings={carouselSettings}>
           {packs.map((item) => (

@@ -2,7 +2,7 @@ import { Box, Button, Text, VStack } from "@chakra-ui/react";
 function PlanItem({ plan }) {
   const { title, description, points, bottomText, price } = plan;
   return (
-    <Box borderRadius='20px' bgColor='gray' p='24px'>
+    <Box borderRadius='20px' bgColor='secondaryLight' p='24px'>
       <VStack align='normal' gap='24px'>
         <Text fontSize='32px'>{title}</Text>
         <Text>{description}</Text>

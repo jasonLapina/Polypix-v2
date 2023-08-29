@@ -19,7 +19,7 @@ function AssetItem({ asset }) {
         asset={asset}
       />
       <Box
-        borderRadius='8px'
+        // borderRadius='8px'
         onClick={() => setShowModal(true)}
         cursor='pointer'
         pos='relative'

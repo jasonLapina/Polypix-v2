@@ -5,7 +5,7 @@ import SegmentActions from "../SegmentActions";
 
 function AssetList({ assets }) {
   return (
-    <Box bgColor='green.100'>
+    <Box>
       <ProductsLayout heading='Assets'>
         <Grid
           gridTemplateColumns='repeat(auto-fit, minmax(240px,1fr))'

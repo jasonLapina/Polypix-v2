@@ -6,8 +6,8 @@ function services() {
   const clients = Array.from({ length: 5 });
   return (
     <>
-      <Box bgColor='dark' color='white' pb='200px'>
-        <Center mb='40px' h='100vh' w='100%' bgColor='light'>
+      <Box bgColor='secondary' color='white' pb='200px'>
+        <Center mb='40px' h='100vh' w='100%' bgColor='secondaryDark'>
           <Heading fontSize='56px'>EDU KOLLAB</Heading>
         </Center>
         <ComponentLayout>

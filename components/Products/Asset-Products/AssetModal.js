@@ -25,7 +25,11 @@ function AssetModal({ onClose, isOpen, asset }) {
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalCloseButton bgColor='gray' color='white' borderRadius='full' />
+        <ModalCloseButton
+          bgColor='secondaryLight'
+          color='white'
+          borderRadius='full'
+        />
         <ModalBody padding='0px'>
           <Image
             loading='lazy'
@@ -44,7 +48,11 @@ function AssetModal({ onClose, isOpen, asset }) {
               </Text>
             </VStack>
             <HStack alignItems='start' gap='40px'>
-              <VStack borderRadius='10px' p='16px' border='2px solid gray'>
+              <VStack
+                borderRadius='10px'
+                p='16px'
+                border='2px solid secondaryLight'
+              >
                 <Text fontWeight='bold' fontSize='32px'>
                   2
                 </Text>

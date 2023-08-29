@@ -14,7 +14,7 @@ function VideoList() {
   };
 
   return (
-    <ProductsLayout bgColor='gray' heading='Videos'>
+    <ProductsLayout heading='Videos'>
       <Carousel propSettings={carouselSettings}>
         {dummyVids.map((_, i) => (
           <VideoItem key={i} />
