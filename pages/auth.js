@@ -2,8 +2,22 @@ import SigninForm from "@/components/Auth/SigninForm";
 import ComponentLayout from "@/components/Shared/Layout/ComponentLayout";
 import Footer from "@/components/Shared/Layout/Footer";
 import AltNav from "@/components/Shared/UI/AltNav";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 function auth() {
+  const altNavItems = [
+    {
+      text: "Services",
+      link: "/services",
+    },
+    {
+      text: "Edu Collab",
+      link: "/services",
+    },
+    {
+      text: "Products",
+      link: "/services",
+    },
+  ];
   return (
     <>
       <Box bgColor='secondary' py='120px'>
@@ -11,7 +25,7 @@ function auth() {
           <SigninForm />
         </ComponentLayout>
       </Box>
-      <AltNav />
+      <AltNav items={altNavItems} />
       <Footer />
     </>
   );

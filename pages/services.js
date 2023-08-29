@@ -1,5 +1,6 @@
 import ComponentLayout from "@/components/Shared/Layout/ComponentLayout";
 import Footer from "@/components/Shared/Layout/Footer";
+import AltNav from "@/components/Shared/UI/AltNav";
 import { Box, Center, Heading, Text } from "@chakra-ui/react";
 function services() {
   const offers = [
@@ -9,6 +10,16 @@ function services() {
     "Hardsurface",
     "Textures",
     "Animation Clean Up",
+  ];
+  const altNavItems = [
+    {
+      text: "Portfolio",
+      link: "/services",
+    },
+    {
+      text: "Demo Reel",
+      link: "/services",
+    },
   ];
   return (
     <>
@@ -30,6 +41,7 @@ function services() {
           ))}
         </ComponentLayout>
       </Box>
+      <AltNav items={altNavItems} />
       <Footer />
     </>
   );

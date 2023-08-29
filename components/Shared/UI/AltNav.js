@@ -1,16 +1,11 @@
-import { Box, HStack, VStack, Text } from "@chakra-ui/react";
+import { Box, HStack, VStack, Text, Icon } from "@chakra-ui/react";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-function AltNav() {
-  const dummyItems = [
-    {
-      text: "Services",
-      link: "/services",
-    },
-  ];
+function AltNav({ items }) {
   return (
-    <Box bgColor='primary'>
+    <Box pb='80px' bgColor='primary'>
       <VStack color='white' gap='0' alignItems='normal'>
-        {dummyItems.map((item) => (
+        {items.map((item) => (
           <Box
             key={item.text}
             borderBlockEnd='solid 1px gray'
@@ -33,13 +28,13 @@ function AltNav() {
             <HStack
               fontSize='40px'
               justifyContent='space-between'
-              py='80px'
-              maxW='1800px'
+              py='56px'
+              maxW='1600px'
               mx='auto'
               zIndex={2}
             >
               <Text>{item.text}</Text>
-              <Text>&rarr;</Text>
+              <Icon as={FaArrowRightLong} />
             </HStack>
           </Box>
         ))}
